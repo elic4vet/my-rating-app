@@ -3,7 +3,12 @@ import icon from "../assets/images/icon-star.svg";
 import "../App.css";
 
 const rating = () => {
-  const [count, setCount] = useState(0);
+  const [selectedNumber, setSelectedNumber] = useState(0);
+
+  const selectNumber = (numberSelected) => {
+    setSelectedNumber(numberSelected);
+    console.log(numberSelected);
+  };
 
   return (
     <div class="container">
@@ -16,40 +21,37 @@ const rating = () => {
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
+
+        <p> You selected : selectedNumber </p>
         <div class="ratings">
           <div class="circle">
-            <div class="one" value={1}>
+            <button class="one" onClick={selectNumber} value="1">
               1
-            </div>
+            </button>
           </div>
           <div class="circle">
-            <div class="two" value={2}>
+            <button class="two" onClick={selectNumber} value="2">
               2
-            </div>
+            </button>
           </div>
           <div class="circle">
-            <div class="three" value={3}>
+            <button class="three" onClick={selectNumber} value="3">
               3
-            </div>
+            </button>
           </div>
           <div class="circle">
-            <div class="four" value={4}>
+            <button class="four" onClick={selectNumber} value="4">
               4
-            </div>
+            </button>
           </div>
           <div class="circle">
-            <div class="five" value={5}>
+            <button class="five" onClick={selectNumber} value="5">
               5
-            </div>
+            </button>
           </div>
         </div>
 
-        <button
-          onClick={() => setCount((count) => count + 1)}
-          class="submit-btn"
-        >
-          Submit - count is {count}
-        </button>
+        <button class="submit-btn">Submit - count is </button>
       </div>
       <div class="attribution">
         Challenge by{" "}
