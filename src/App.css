@@ -119,7 +119,7 @@ button .ratings {
   margin-top: 5px;
 }
 
-button .ratings:hover {
+.circle:hover {
   background-color: var(--light-grey);
   cursor: pointer;
   color: var(--white);
