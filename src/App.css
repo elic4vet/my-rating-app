@@ -100,6 +100,7 @@
   padding-left: 0;
   text-align: center;
   justify-content: space-evenly;
+  text-align: center;
   color: var(--light-grey);
 }
 
@@ -107,17 +108,18 @@ h1 {
   color: var(--white);
 }
 
-.circle {
+button .ratings {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: var(--light-grey-opac);
+  margin-top: 5px;
 }
-.circle:hover {
+
+button .ratings:hover {
   background-color: var(--light-grey);
   cursor: pointer;
   color: var(--white);
@@ -130,18 +132,24 @@ h1 {
 p {
   color: var(--light-grey);
 }
-.one,
-.two,
-.three,
-.four,
-.five {
+
+div .ratings button {
   background: none;
   border: none;
   color: var(--white);
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .selected {
   background-color: var(--Orange-clr);
   color: var(--white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
