@@ -1,16 +1,9 @@
 import React from "react";
-
-function success({ setSuccess }) {
-  const changeSuccessState = () => {
-    setSuccess(true);
-  };
+function success() {
   return (
     <div>
       <p className="result"></p>
-      <button className="btn" onClick={() => changeSuccessState()}>
-        {" "}
-        Back to home{" "}
-      </button>
+      <button className="btn"> Back to home </button>
     </div>
   );
 }
