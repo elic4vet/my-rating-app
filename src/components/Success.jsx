@@ -1,7 +1,18 @@
 import React from "react";
 
-const Success = () => {
-  return <div>Success</div>;
-};
+function success({ setSuccess }) {
+  const changeSuccessState = () => {
+    setSuccess(true);
+  };
+  return (
+    <div>
+      <p className="result"></p>
+      <button className="btn" onClick={() => changeSuccessState()}>
+        {" "}
+        Back to home{" "}
+      </button>
+    </div>
+  );
+}
 
-export default Success;
+export default success;
