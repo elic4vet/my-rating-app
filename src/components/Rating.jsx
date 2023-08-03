@@ -4,17 +4,17 @@ import "../App.css";
 
 const rating = () => {
   const [selectedNumber, setSelectedNumber] = useState(0);
-
   const selectNumber = (numberSelected) => {
     setSelectedNumber(numberSelected);
-    console.log(numberSelected);
+    let result = document.querySelector(".result");
+    result.innerHTML = `You selected ${numberSelected.target.value} out of 5 stars!`;
   };
 
   return (
-    <div class="container">
-      <div class="card">
-        <div class="circle">
-          <img src={icon} class="icon" alt="icon" />
+    <div className="container">
+      <div className="card">
+        <div className="circle">
+          <img src={icon} className="icon" alt="icon" />
         </div>
         <h1>How did we do ? </h1>
         <p>
@@ -22,43 +22,43 @@ const rating = () => {
           is appreciated to help us improve our offering!
         </p>
 
-        <p> You selected : selectedNumber </p>
-        <div class="ratings">
-          <div class="circle">
-            <button class="one" onClick={selectNumber} value="1">
+        <p className="result"> </p>
+        <div className="ratings">
+          <div className="circle">
+            <button className="one" onClick={selectNumber} value="1">
               1
             </button>
           </div>
-          <div class="circle">
-            <button class="two" onClick={selectNumber} value="2">
+          <div className="circle">
+            <button className="two" onClick={selectNumber} value="2">
               2
             </button>
           </div>
-          <div class="circle">
-            <button class="three" onClick={selectNumber} value="3">
+          <div className="circle">
+            <button className="three" onClick={selectNumber} value="3">
               3
             </button>
           </div>
-          <div class="circle">
-            <button class="four" onClick={selectNumber} value="4">
+          <div className="circle">
+            <button className="four" onClick={selectNumber} value="4">
               4
             </button>
           </div>
-          <div class="circle">
-            <button class="five" onClick={selectNumber} value="5">
+          <div className="circle">
+            <button className="five" onClick={selectNumber} value="5">
               5
             </button>
           </div>
         </div>
 
-        <button class="submit-btn">Submit - count is </button>
+        <button className="submit-btn">Submit </button>
       </div>
-      <div class="attribution">
-        Challenge by{" "}
+      <div className="attribution">
+        Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
-        </a>
-        . Coded by <a href="#">Your Name Here</a>.
+        </a>{" "}
+        Coded by <a href="#"> Elisabeth Erkekoglou</a>
       </div>
     </div>
   );
