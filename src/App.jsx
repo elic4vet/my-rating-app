@@ -9,14 +9,7 @@ function App() {
 
   return (
     <>
-      {success ? (
-        <Rating setSuccess={setSuccess} setSelectedNumber={setSelectedNumber} />
-      ) : (
-        <Success
-          setSuccess={setSuccess}
-          setSelectedNumber={setSelectedNumber} // this is not needed here but is needed in the Success component to reset the rating to 0 when the user clicks the back to home button
-        />
-      )}
+      <Rating />
     </>
   );
 }
