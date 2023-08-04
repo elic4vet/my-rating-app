@@ -6,7 +6,9 @@ import "../App.css";
 const rating = () => {
   const [selectedNumber, setSelectedNumber] = useState(0);
   const [success, setSuccess] = useState(false);
-  const selectNumber = (numberSelected) => {
+  const [isActive, setActive] = useState(false);
+
+  const handleClick = (numberSelected) => {
     setSelectedNumber(numberSelected);
   };
 
@@ -57,27 +59,47 @@ const rating = () => {
           <p className="results"></p>
           <div className="ratings">
             <div className="circle">
-              <button className="one" onClick={selectNumber} value="1">
+              <button
+                className={isActive ? "selected" : ""}
+                onClick={handleClick}
+                value="1"
+              >
                 1
               </button>
             </div>
             <div className="circle">
-              <button className="two" onClick={selectNumber} value="2">
+              <button
+                className={isActive ? "selected" : ""}
+                onClick={handleClick}
+                value="2"
+              >
                 2
               </button>
             </div>
             <div className="circle">
-              <button className="three" onClick={selectNumber} value="3">
+              <button
+                className={isActive ? "selected" : ""}
+                onClick={handleClick}
+                value="3"
+              >
                 3
               </button>
             </div>
             <div className="circle">
-              <button className="four" onClick={selectNumber} value="4">
+              <button
+                className={isActive ? "selected" : ""}
+                onClick={handleClick}
+                value="4"
+              >
                 4
               </button>
             </div>
             <div className="circle">
-              <button className="five" onClick={selectNumber} value="5">
+              <button
+                className={isActive ? "selected" : ""}
+                onClick={handleClick}
+                value="5"
+              >
                 5
               </button>
             </div>
