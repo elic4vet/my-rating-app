@@ -147,12 +147,8 @@ div .ratings button {
   align-items: center;
 }
 
-.selected {
-  background-color: var(--Orange-clr);
-  color: var(--white);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.ratings .selected {
+  background-color: #ffcc00;
 }
 
 .successComponent div {
