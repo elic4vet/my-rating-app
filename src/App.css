@@ -147,8 +147,9 @@ div .ratings button {
   align-items: center;
 }
 
-.ratings .selected {
-  background-color: #ffcc00;
+.circle .selected {
+  background-color: var(--Orange-clr);
+  border-radius: 50%;
 }
 
 .successComponent div {
