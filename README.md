@@ -14,7 +14,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -96,11 +95,11 @@ if (success) {
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resource 1](https://react.dev/reference/react/useState) - This helped me understand how to use the useState hook to update the state of the app when a user clicks on a rating.
+- [Example resource 2](https://www.freecodecamp.org/news/learn-react-router-6/) - This is an amazing article which helped me understand how to use React Router to create a multi-page app. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Elisabeth Erkekoglou ](https://www.linkedin.com/in/eerkekoglou/)
+- Frontend Mentor - [@elic4vet](https://www.frontendmentor.io/profile/elic4vet)
+- Instagram - [@elisa.codes23](https://www.instagram.com/elisa.codes23/)
