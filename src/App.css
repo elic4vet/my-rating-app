@@ -31,6 +31,38 @@
   --light-grey-opac: hsla(217, 12%, 63%, 0.1);
 }
 
+h1 {
+  color: var(--white);
+}
+
+button .ratings {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--light-grey-opac);
+  margin-top: 5px;
+}
+
+p {
+  color: var(--light-grey);
+}
+
+div .ratings button {
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -105,21 +137,6 @@
   color: var(--light-grey);
 }
 
-h1 {
-  color: var(--white);
-}
-
-button .ratings {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--light-grey-opac);
-  margin-top: 5px;
-}
-
 .circle:hover {
   background-color: var(--light-grey);
   cursor: pointer;
@@ -129,22 +146,6 @@ button .ratings {
 .icon:hover {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg)
     brightness(100%) contrast(100%);
-}
-p {
-  color: var(--light-grey);
-}
-
-div .ratings button {
-  background: none;
-  border: none;
-  color: var(--white);
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .circle .selected {
