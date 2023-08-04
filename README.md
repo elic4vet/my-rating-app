@@ -30,9 +30,9 @@ Users should be able to:
 
 Here are some screenshots of my app.
 
-![](./images/main_screenshot.png)
+![](../images/main_screenshot.png)
 
-![](./images/success_screenshot.png)
+![](../images/success_screenshot.png)
 
 ### Links
 
