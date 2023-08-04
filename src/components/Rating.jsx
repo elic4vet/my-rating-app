@@ -6,10 +6,11 @@ import "../App.css";
 const rating = () => {
   const [selectedNumber, setSelectedNumber] = useState(0);
   const [success, setSuccess] = useState(false);
-  const [isActive, setActive] = useState(false);
+  const [isActive, setActive] = useState("");
 
   const handleClick = (numberSelected) => {
     setSelectedNumber(numberSelected);
+    setActive(!isActive);
   };
 
   const handleSubmit = () => {
@@ -60,8 +61,10 @@ const rating = () => {
           <div className="ratings">
             <div className="circle">
               <button
+                key={1}
                 className={isActive ? "selected" : ""}
                 onClick={handleClick}
+                id={"1"}
                 value="1"
               >
                 1
@@ -69,8 +72,10 @@ const rating = () => {
             </div>
             <div className="circle">
               <button
+                key={2}
                 className={isActive ? "selected" : ""}
                 onClick={handleClick}
+                id={"2"}
                 value="2"
               >
                 2
@@ -78,8 +83,10 @@ const rating = () => {
             </div>
             <div className="circle">
               <button
+                key={3}
                 className={isActive ? "selected" : ""}
                 onClick={handleClick}
+                id={"3"}
                 value="3"
               >
                 3
@@ -87,8 +94,10 @@ const rating = () => {
             </div>
             <div className="circle">
               <button
+                key={4}
                 className={isActive ? "selected" : ""}
                 onClick={handleClick}
+                id={"4"}
                 value="4"
               >
                 4
@@ -96,8 +105,10 @@ const rating = () => {
             </div>
             <div className="circle">
               <button
+                key={5}
                 className={isActive ? "selected" : ""}
                 onClick={handleClick}
+                id={"5"}
                 value="5"
               >
                 5
@@ -115,7 +126,11 @@ const rating = () => {
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
         </a>{" "}
-        Coded by <a href="#"> Elisabeth Erkekoglou</a>
+        Coded by{" "}
+        <a href="https://www.linkedin.com/in/eerkekoglou/">
+          {" "}
+          Elisabeth Erkekoglou
+        </a>
       </div>
     </div>
   );
