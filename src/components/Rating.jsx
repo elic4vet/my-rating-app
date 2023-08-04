@@ -10,7 +10,7 @@ const rating = () => {
     setSelectedNumber(numberSelected);
   };
 
-  const handleClick = () => {
+  const handleSubmit = () => {
     if (selectedNumber === 0) {
       alert("Please select a rating!");
     } else {
@@ -83,7 +83,7 @@ const rating = () => {
             </div>
           </div>
         </div>
-        <button className="submit-btn" onClick={handleClick}>
+        <button className="submit-btn" onClick={handleSubmit}>
           Submit{" "}
         </button>
       </div>
