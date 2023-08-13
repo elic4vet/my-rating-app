@@ -12,7 +12,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -92,11 +91,7 @@ if (success) {
 - I will continue to learn how to use complicated CSS properties and how to use React to build more complex apps.
 - I will also learn how to use React Router to create a multi-page app.
 - Last but not least, I will learn how to use React Context to manage the state of the app.
-
-### Useful resources
-
-- [Example resource 1](https://react.dev/reference/react/useState) - This helped me understand how to use the useState hook to update the state of the app when a user clicks on a rating.
-- [Example resource 2](https://www.freecodecamp.org/news/learn-react-router-6/) - This is an amazing article which helped me understand how to use React Router to create a multi-page app. I'd recommend it to anyone still learning this concept.
+ 
 
 ## Author
 
